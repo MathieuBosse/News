@@ -9,42 +9,36 @@ Once you have your API key, you need to replace the placeholder value with your 
 ## Features
 The wrapper currently supports the following features:
 
-Fetch top headlines by category: You can specify a category (e.g., sports, technology, entertainment) to get the top headlines from that category in a specific country.
-Fetch news articles by query: You can search for news articles based on a query string and get the top results.
+- Fetch top headlines by category: You can specify a category (e.g., sports, technology, entertainment) to get the top headlines from that category in a specific country.
+- Fetch news articles by query: You can search for news articles based on a query string and get the top results.
 
 ## Usage
 The wrapper provides the following functions:
 
-get_articles_by_category(category): Fetches top articles for a specific category. The category, sorting option, and country are customizable.
-get_articles_by_query(query): Fetches top articles based on a search query. The sorting option and country are customizable.
-get_sources_by_category(category): Fetches news sources for a specific category.
+- get_articles_by_category(category): Fetches top articles for a specific category. The category, sorting option, and country are customizable.
+- get_articles_by_query(query): Fetches top articles based on a search query. The sorting option and country are customizable.
+- get_sources_by_category(category): Fetches news sources for a specific category.
+
 To use the functions, simply call them in your Python script, passing the appropriate parameters. The retrieved articles or sources will be printed to the console.
 
 ## Examples
 Here are some examples of how to use the wrapper:
 
-Fetch top headlines in the sports category for France
+```python
+# Fetch top headlines in the sports category for France
 get_articles_by_category("sports")
 
-Fetch top articles related to "technology" in the UK
+# Fetch top articles related to "technology" in the UK
 get_articles_by_query("technology")
 
-Fetch news sources in the entertainment category
+# Fetch news sources in the entertainment category
 get_sources_by_category("entertainment")
-
-Fetch top headlines in the sports category for France
-get_articles_by_category("sports")
-
-Fetch top articles related to "technology" in the UK
-get_articles_by_query("technology")
-
-Fetch news sources in the entertainment category
-get_sources_by_category("entertainment")
+```
 
 ## Dependencies
 This project requires the requests library to make HTTP requests. You can install it using pip:
-
+```python
 pip install requests
-
+```
 ## Contributions
 Contributions to this project are welcome. If you find any issues or have suggestions for improvement, please feel free to open an issue or submit a pull request.
